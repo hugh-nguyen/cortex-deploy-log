@@ -1,0 +1,12 @@
+- app: app1
+  svc: mfe-a
+  ver: 0.0.1
+  depends_on:
+  - svc: service-b
+- app: app1
+  svc: service-b
+  ver: 0.0.2
+  depends_on:
+  - app: shared-app
+    svc: service-s
+    ver: 0.0.3
