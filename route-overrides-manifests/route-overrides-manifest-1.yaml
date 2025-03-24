@@ -1,0 +1,4 @@
+/app1/mfe-a/:
+  app: app1
+  app_ver: 1
+  svc: mfe-a
