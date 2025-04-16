@@ -1,0 +1,13 @@
+services:
+- app: shared-app
+  svc: service-s
+  svc_ver: 0.0.3
+routes:
+- prefix: /shared-app/service-s/
+  headers:
+    X-App-Version: 3
+  cluster: shared-app-service-s-0-0-3
+- prefix: /shared-app/service-s/
+  cluster: shared-app-service-s-0-0-3
+dependencies: []
+links: []
